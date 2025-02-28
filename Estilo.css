@@ -1,0 +1,318 @@
+body {
+    background-color: #f1eddb;
+    font-family: 'Crimson Text', serif;
+    color: #4e453c;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #eed8a4;
+    color: #9f690c; 
+    padding: 20px 0;
+    text-align: center;
+    border: 2px solid #9b8367;
+    border-radius: 5px;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header ul li{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #4e453c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: flex;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul{
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0px;
+}
+
+section{
+    background-color: #f5e9d7;
+    border: 2px solid #9b8367;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#Mapa img{
+    width: 100%;
+    max-width: 1490px;
+    height: auto;
+    align-self: flex-start;
+    border-radius: 15px;
+    padding-right: 10px;
+}
+
+#Olvidados{
+    background-color:  #b0a28e;
+    border-radius: 15px;
+}
+
+#Olvidados .Ficha-container {
+    flex-wrap: wrap;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px;
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9a9090;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#Olvidados .Estadisticas {
+    flex:1;
+    background-color: #060606;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+#Heroes h4, .Heroes .raza{
+    justify-content: center;
+    text-align: center;
+}
+
+#Villanos h4, .Villanos .raza{
+    justify-content: center;
+    text-align: center;
+}
+
+.Ficha-container {
+    flex-wrap: wrap;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px;
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.precio{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Descripcion {
+    flex:2;
+    text-align: justify;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.Estadisticas {
+    flex:1;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.Estadisticas ul{
+    padding-left: 15px;
+}
+
+.Estadisticas ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+#Personajes img{
+    width: 150px;
+    height: 200px;
+    margin: 10px auto;
+    align-self: flex-start;
+    border-radius: 10px;
+}
+
+.DescripcionI {
+    flex:2;
+    text-align: justify;
+    min-width: 200px;
+    margin-left: 500px;
+}
+
+.miniatura{
+    padding-right: 20px;
+}
+
+th{
+    font-size: 25px;
+}
+
+/*Esto lo he buscado, no sabia como se hacía*/
+.contenedor-imagen {
+    max-width: 300px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.miniatura {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    
+}
+
+.miniatura:hover {
+    transform: scale(1.05);
+}
+
+.modal1, .modal2, .modal3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;;
+}
+
+#FotosMercado1:checked ~ .modal1, #FotosMercado2:checked ~ .modal2, #FotosMercado3:checked ~ .modal3 {
+    display: flex;
+    animation: aparecer 0.3s ease-out;
+}
+
+.modal-contenido1, .modal-contenido2 {
+    position: relative;
+    max-width: 100%;
+    max-height: 105%;
+    width: 500px;
+}
+
+.modal-contenido3{
+    position: relative;
+    max-width: 100%;
+    max-height: 105%;
+    width: 1300px;
+}
+
+.modal-imagen {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Hasta aqui he investigado*/
+
+#Mercados table{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+
+#Mercados .Mercado24, .thMercado24{
+    border-right: 2px solid black;
+}
+
+#Mercados th{
+    border-bottom: 2px solid black; 
+}
+
+#Mercados td{
+    padding: 20px;
+}
+
+.Nocturno a{
+    color: red;
+    position: relative; 
+    transition: color 0.3s ease;
+}
+
+.Nocturno a:hover{
+    color: blue;  
+    transform: scale(1.01); 
+}
+
+#Rebajas table{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+
+#Rebajas table td{
+    border-top: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+#Rebajas table #td1,#Rebajas table #td2, #Rebajas table #td3, #Rebajas table #th{
+    border-right: 2px solid black;
+}
+
+
+footer{
+    border: 2px solid #9b8367;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Ficha-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Descripcion, .Estadisticas {
+        text-align: center;
+        width: 100%;
+    }
+    #Mapa img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
